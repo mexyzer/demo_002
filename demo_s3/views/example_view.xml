@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <!-- Form view for the model -->
+        <record id="view_demo_s3_example_form" model="ir.ui.view">
+            <field name="name">demo.s3.example.form</field>
+            <field name="model">demo.s3.example</field>
+            <field name="arch" type="xml">
+                <form string="Example">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="file_data" filename="file_name" widget='binary'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view for the model -->
+        <record id="view_demo_s3_example_tree" model="ir.ui.view">
+            <field name="name">demo.s3.example.tree</field>
+            <field name="model">demo.s3.example</field>
+            <field name="arch" type="xml">
+                <tree string="Examples">
+                    <field name="name"/>
+                    <field name="file_name"/>
+                    <field name="file_remote_url"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action to open the form view -->
+        <record id="action_demo_s3_example" model="ir.actions.act_window">
+            <field name="name">Examples</field>
+            <field name="res_model">demo.s3.example</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_demo_s3_example_tree"/>
+        </record>
+
+        <menuitem name="examples" id="menu_demo_s3_root"/>-->
+        <!-- Menu item to access the action -->
+        <menuitem name="Examples" id="menu_demo_s3_example"
+                  parent="menu_demo_s3_root"
+                  action="action_demo_s3_example"/>
+    </data>
+</odoo>

@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="view_product_template_form_demo" model="ir.ui.view">
+            <field name="name">product.template.form.demo</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="inside">
+<!--                    <group>-->
+<!--                            nothing yet-->
+<!--                    </group>-->
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_product_template_tree_demo" model="ir.ui.view">
+            <field name="name">product.template.tree.demo</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <!-- nothing yet -->
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

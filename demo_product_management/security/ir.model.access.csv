@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_demo_product_management_example_user,demo_product_management_example_user,model_demo_product_management_example,base.group_user,1,1,1,1
+access_product_template_demo,access.product.template.demo,model_product_template,,1,1,1,1
+access_product_product_demo,access.product.product.demo,model_product_product,,1,1,1,1

@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+<!--    &lt;!&ndash; List view definition &ndash;&gt;-->
+<!--    <record model="ir.ui.view" id="view_demo_base_example_tree">-->
+<!--      <field name="name">demo.base.example.tree</field>-->
+<!--      <field name="model">demo.base.example</field>-->
+<!--      <field name="arch" type="xml">-->
+<!--        <tree>-->
+<!--          <field name="name"/>-->
+<!--          <field name="value"/>-->
+<!--          <field name="value2"/>-->
+<!--        </tree>-->
+<!--      </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; Form view definition &ndash;&gt;-->
+<!--    <record model="ir.ui.view" id="view_demo_base_example_form">-->
+<!--      <field name="name">demo.base.example.form</field>-->
+<!--      <field name="model">demo.base.example</field>-->
+<!--      <field name="arch" type="xml">-->
+<!--        <form>-->
+<!--          <sheet>-->
+<!--            <group>-->
+<!--              <field name="name"/>-->
+<!--              <field name="value"/>-->
+<!--              <field name="value2" readonly="1"/>-->
+<!--              <field name="description"/>-->
+<!--            </group>-->
+<!--          </sheet>-->
+<!--        </form>-->
+<!--      </field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; Action to open views &ndash;&gt;-->
+<!--    <record model="ir.actions.act_window" id="action_demo_base_example">-->
+<!--      <field name="name">Example Products</field>-->
+<!--      <field name="res_model">demo.base.example</field>-->
+<!--      <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash; Menu items &ndash;&gt;-->
+<!--    <menuitem name="Products" id="menu_demo_base_root"/>-->
+<!--    <menuitem name="Example Products" id="menu_demo_base_example" parent="menu_demo_base_root"-->
+<!--              action="action_demo_base_example"/>-->
+  </data>
+</odoo>

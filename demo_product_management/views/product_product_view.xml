@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="view_product_product_tree_demo" model="ir.ui.view">
+            <field name="name">product.product.tree.demo</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <!-- nothing yet -->
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
